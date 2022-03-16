@@ -1,0 +1,10 @@
+<% 
+require 'rubygems'
+
+client = Mysql2::Client.new(:host => "localhost", :database => "data", :username => "test", :password => "qwerty")
+@results = client.query("SELECT * FROM users")
+%>
+
+<%= @results.each do |row| %>
+
+    <% end %>
